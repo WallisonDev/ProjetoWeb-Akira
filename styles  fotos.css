@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav{
+    width: 60%;
+
+}
+
+ul { 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 3s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo{
+    height: 90px;
+    width: auto;
+}
+
+#banner{
+    background-image: url(https://www.torredevigilancia.com/wp-content/uploads/2017/05/banner_akira.jpg);
+    background-position: 50%, 50%;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+
+}
+
+.galery-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.neto-conteiner{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 80px;
+    justify-items: center;
+    margin-left: 5%;
+ 
+   
+}
+
+.neto{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+
+}
+
+.neto:hover{
+
+    transform: scale(1.03);
+}
+
+.foto1{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BNTRkY2Y4NmYtMjBlZi00NmU2LWIxYjQtNDdmZGUwMWM5ZmMzXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg');
+}
+
+.foto2{
+    background-image: url('https://res.cloudinary.com/sunmarsh/image/upload/v1606612035/Kaori_is_smothered_zulkhw.jpg');
+}
+
+.foto3{
+    background-image: url('https://pbs.twimg.com/media/D-uEI5WX4AAESou.png');
+}
+
+.foto4{
+    background-image: url('https://helios-i.mashable.com/imagery/videos/01pxzQtNG4Kv6TYwkCozakF/hero-image.fill.size_1200x900.v1614265969.jpg');
+}
+
+.foto5{
+    background-image: url('https://www.pennlive.com/resizer/L9_cW82ipfw5AKBb91Mo2L9fYRE=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/PPNPAP2TEBB5FD4QZJPGV6RQQU.jpg');
+}
+
+.foto6{
+    background-image: url(https://comicvine.gamespot.com/a/uploads/original/11139/111391791/8549257-shima.tetsuo.full.3015088.jpg);
+}
+
+.foto7{
+    background-image: url('https://www.ganriki.org/media/2013/akira-at-25-05.jpg');
+}
+
+.foto8{
+    background-image: url('https://imageio.forbes.com/specials-images/imageserve/5f6575a5cc6b383f9952680e/Akira/0x0.jpg?format=jpg&crop=1280,720,x0,y0,safe&width=960');
+}
+
+.foto9{
+    background-image: url('https://i.ytimg.com/vi/5fGSzO_pux8/maxresdefault.jpg');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{ 
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+
+    #banner {
+        background-position: 100%;
+    }
+
+   
+    .galery-container{
+    width: 95%;
+    display: flex;
+    flex-direction: column
+
+    }
+
+    
+    .neto-conteiner{
+        grid-template-columns: 1fr;
+        margin-top: 230px;
+    }
+}
+
+}
+
+nav {
+    display: none;
+}
